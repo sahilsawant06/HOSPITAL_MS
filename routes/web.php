@@ -15,7 +15,12 @@ use App\Http\Controllers\PageController;
 Route::controller(PageController::class)->group(function(){
     Route::get('/','showHome')->name('home');
 Route::get('/blog','showBlog')->name('blog');
-Route::get('/user/{id}','showUser')->name('users'); 
+Route::get('/user/{id}','showUser')->name('users');
+
+///Login Page for Hospital Management.
+Route::get('/login',function(){
+    return view('login');
+});
 
 });
 

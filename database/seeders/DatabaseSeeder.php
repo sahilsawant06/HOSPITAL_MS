@@ -8,6 +8,7 @@ use App\Models\student;
 use App\Models\test;
 
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -25,6 +26,10 @@ class DatabaseSeeder extends Seeder
         // student::factory()->count(10)->create();/
         student::factory()->count(10)->create();
         test::factory()->count(5)->create();
+
+
+
+
 
 
 
