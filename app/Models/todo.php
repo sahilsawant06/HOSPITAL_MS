@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class logindetail extends Model
+class todo extends Model
 {
-    // use HasFactory;
-    protected $table="logindetails";
+    use HasFactory;
+   protected  $fillable = ['name', 'created_at'];
 }
